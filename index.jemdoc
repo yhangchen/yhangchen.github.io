@@ -1,0 +1,22 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+==Yihang Chen
+~~~
+{}{img_left}{photos/bio.jpg}{alt text}{131}{160}{}
+Bachelor of Science,\n 
+[https://www.math.pku.edu.cn/ School of Mathematical Sciences], \n
+[https://www.pku.edu.cn/ Peking University] \n 
+E-post: /yihang.chen/ \[@\] pku \[DOT\] edu \[DOT\] cn
+~~~
+
+== About me
+I will receive the B.S. degrees in School of Mathematical Sciences from Peking University ([https://www.pku.edu.cn/ PKU]) in 2021.
+
+== Research
+My research interests include 
+
+[research.html Find out more].
+== Publications
+- [https://arxiv.org/abs/2009.11094 Sanity-Checking Pruning Methods: Random Tickets can Win the Jackpot.]\n
+Jingtong Su\*, *Yihang Chen\**, Tianle Cai\*, Tianhao Wu, Ruiqi Gao, Liwei Wang, and Jason D.~Lee.\n
+NeurIPS 2020.~[slides_sanity.pdf \[slides\]]~[https://github.com/JingtongSu/sanity-checking-pruning \[code\]]\n
+(\* denotes equal contribution)
