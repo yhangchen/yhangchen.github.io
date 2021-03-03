@@ -1,4 +1,8 @@
 # jemdoc: menu{MENU}{personal.html}, nofooter
 
 == Discover the World
+~~~
+{}{raw}
+<iframe src="https://www.google.com/maps/d/embed?mid=1AOfO33naxqJ9DWNdZad22H3Wf0XErI-t" width="640" height="480"></iframe>
+~~~
 

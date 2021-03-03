@@ -1,4 +1,4 @@
-# jemdoc: menu{MENU}{courses.html}  
+# jemdoc: menu{MENU}{courses.html}, nofooter
 
 == Selective Courses
 . [http://bicmr.pku.edu.cn/~wenzw/opt-2020-fall.html *Convex Optimization*]
