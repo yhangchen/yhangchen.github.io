@@ -2,22 +2,30 @@
 ==Yihang Chen
 
 ~~~
-{}{img_left}{bio.jpg}{alt text}{160}{160}{https://yhangchen.github.io}
+{}{img_left}{src/pics/bio.jpg}{alt text}{160}{160}{https://yhangchen.github.io}
 [ Bachelor of Science],\n 
 [https://dics.pku.edu.cn/ Department of Information and Computational Sciences], \n
 [https://www.math.pku.edu.cn/ School of Mathematical Sciences], \n
 [https://www.pku.edu.cn/ Peking University] \n 
-Email: /yihang.chen/ \[@\] pku \[DOT\] edu \[DOT\] cn
+Email: yihang.chen \[@\] pku \[DOT\] edu \[DOT\] cn \n\n
+[https://scholar.google.com/citations?user=o1NjKH8AAAAJ&hl=en \[Google Scholar\]], [https://www.overleaf.com/read/thnhrbrfrbvq \[Curriculum Vitae\]]
 ~~~
 
 == About me
-I will receive the B.S. degrees in School of Mathematical Sciences from Peking University ([https://www.pku.edu.cn/ PKU]) in 2021.
+I will receive the B.S. degree in School of Mathematical Sciences from Peking University in 2021. 
 
 == Research
-My research interests include 
+My research interests span across non-convex optimization and statistical learning. In the past, I focused on the theoretical properties of the loss surface and its empirical implications. In the future, I also plan to make deep reinforcement learning more efficient, both computationally and statistically.
 
 == Publications
 - [https://arxiv.org/abs/2009.11094 Sanity-Checking Pruning Methods: Random Tickets can Win the Jackpot.]\n
 Jingtong Su\*, *Yihang Chen\**, Tianle Cai\*, Tianhao Wu, Ruiqi Gao, Liwei Wang, and Jason D.~Lee.\n
-NeurIPS 2020.~[slides_sanity.pdf \[slides\]]~[https://github.com/JingtongSu/sanity-checking-pruning \[code\]]\n
+NeurIPS 2020.~[src\slides_sanity.pdf \[slides\]]~[https://github.com/JingtongSu/sanity-checking-pruning \[code\]]\n
 (\* denotes equal contribution)
+
+== Selected Awards
+. [src/awards/Awards-PKU-1.jpg National Scholarship, Ministry of Education of the People’s Republic of China, 2020. (Top Five Students)]
+. [src/awards/Awards-PKU-2.jpg Exceptional Award for Academic Innovation, Peking University, 2020. (Top 1%)]
+. [src/awards/Award-ST-Yau.jpg S.T.-Yau College Student Mathematics Contest, Applied and Computational Mathematics, C.C. Lin Medal, Bronze, 2020.]
+. [https://www.math.pku.edu.cn/amel/bjxspy/bjxspyjh/index.htm The Elite Undergraduate Training Program of Applied Math, 2019 - 2021.]
+. [src/awards/Awards-PKU-3.pdf Merit Student, 2018, 2020. (Top 5%)]

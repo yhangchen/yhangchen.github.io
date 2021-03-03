@@ -1,2 +1,2 @@
 #!bin/bash
-python2 jemdoc.py index.jemdoc courses.jemdoc personal.jemdoc
+python2 jemdoc.py index.jemdoc personal.jemdoc experiences.jemdoc
