@@ -1,7 +1,6 @@
 # jemdoc: menu{MENU}{courses.html}  
 
-Here is a selective list of courses that I have passed during my undergraduate studies:
-== Mathematical Courses
+== Selective Courses
 . [http://bicmr.pku.edu.cn/~wenzw/opt-2020-fall.html *Convex Optimization*]
 . [http://bicmr.pku.edu.cn/~wenzw/bigdata2020.html *Algorithms for Big Data Analysis*]
 . [https://www.math.pku.edu.cn/teachers/linw/2892f20.html *Statistical Learning*]
@@ -9,3 +8,5 @@ Here is a selective list of courses that I have passed during my undergraduate s
 . [https://bookstore.ams.org/gsm-199/ *Applied Stochastic Analysis*]
 . [http://dsec.pku.edu.cn/~tanghz/course-html/nmpde.php *Numerical Methods for Partial Differential Equations*]
 . [https://github.com/leiwu0/course.math_theory_nn *Mathematical Theory of Neural Network Models*]
+
+[https://github.com/yhangchen/Course-project *Here*] is an archive of all the course projects in the university.
