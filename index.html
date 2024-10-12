@@ -13,6 +13,17 @@
 
 </head>
 
+<style>
+    .container {
+      display: flex;
+      justify-content: center; /* Horizontally centers */
+      align-items: center;    /* Vertically centers */
+    }
+</style>
+  
+  
+  
+
 <body>
     <table
         style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -25,27 +36,14 @@
                             <tr style="padding:0px">
                                 <td style="padding:2.5%;width:63%;vertical-align:middle">
                                     <p class="name" style="text-align: center;">
-                                        Yihang Chen (陈奕行)
+                                        Yihang Chen 陈奕行
                                     </p>
-                                    <p> I received
-                                        the M.S. degree from the School of Computer and Communication Sciences at <a
-                                            href="https://epfl.ch">EPFL</a>
-                                        in February 2024, advised by Prof. <a
-                                            href="https://people.epfl.ch/volkan.cevher"> Volkan Cevher</a>; and
-                                        the B.S. degree from the School of Mathematical Sciences at <a
-                                            href="https://english.pku.edu.cn"> Peking
-                                            University</a>
-                                        in July 2021, advised by Prof. <a href="http://www.liweiwang-pku.com"> Liwei
-                                            Wang</a>.
-                                    <p> 
-                                        I am currently working as an internship student at Laboratory for Information and Inference Systems (<a
-                                        href="https://www.epfl.ch/labs/lions/">LIONS</a>), EPFL. I will pursue my PhD on computer science at <a
-                                        href="https://www.cs.ucla.edu/">UCLA</a>, advised by Prof. <a href="https://web.cs.ucla.edu/~chohsieh/">Cho-Jui Hsieh</a>
-                                    </p>
-                            
+                                    <p> I am a PhD student in computer science at <a href="https://www.cs.ucla.edu/">UCLA</a>, advised by Prof. <a href="https://web.cs.ucla.edu/~chohsieh/">Cho-Jui Hsieh</a>.
+                                        I received my bachelor degree in computational mathematics at <a href="https://english.pku.edu.cn"> Peking University</a> in July 2021, advised by Prof. <a href="http://www.liweiwang-pku.com"> Liwei Wang</a>; 
+                                        and my master degree in data science at <a href="https://epfl.ch">EPFL</a> in February 2024, advised by Prof. <a href="https://people.epfl.ch/volkan.cevher"> Volkan Cevher</a>. 
                                     </p>
                                     <p style="text-align:center">
-                                        <a href="mailto:yihang.chen@pku.edu.cn">Email</a> &nbsp;/&nbsp;
+                                        <a href="mailto:yhangchen@cs.ucla.edu">Email</a> &nbsp;/&nbsp;
                                         <a href="https://www.overleaf.com/read/thnhrbrfrbvq#7aed11">CV</a> &nbsp;/&nbsp;
                                         <a href="https://scholar.google.com/citations?user=HzlOQRkAAAAJ&hl">Google
                                             Scholar</a>
@@ -70,16 +68,11 @@
                                 <td style="padding:20px;width:100%;vertical-align:middle">
                                     <h2>Research</h2>
                                     <p>
-                                        I have a broad interest in deep learning theory and generative models. At
-                                        present, my current research
-                                        mainly
-                                        focus on: </p>
+                                        I have a broad interest in large language models and other generative models. Currently, my current research mainly focus on: </p>
                                     <ul>
-                                        <li> Safety of LLMs: Jailbreaking and Membership Inference Attacks.</li>
-                                        <li>Applied Probability: Stochastic Control, Optimal Transport, Generative Flow
-                                            Networks.
-                                        </li>
-                                        <li>AutoML: Pruning, Neural Architecture Search.</li>
+                                        <li> LLM Safety: Jailbreaking, Membership Inference Attacks.</li>
+                                        <li> LLM Alignment: Preference Optimization, Parameter-Efficient Finetuning</li>
+                                        <li> Sampling: MCMC, Generative Flow Networks.</li>
                                     </ul>
                                 </td>
                             </tr>
@@ -101,9 +94,36 @@
                     <table
                         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
+
                             <tr>
                                 <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="one">
+                                    <div class="container">
+                                        <img src='images/24_neurips_mia.jpg' width="100%" align="center">
+                                    </div>
+                                </td>
+                                <td style="padding:20px;width:75%;vertical-align:middle">
+                                    <a href="">
+                                        <span class="papertitle">Membership Inference Attacks against Large Vision-Language Models</span>
+                                    </a>
+                                    <br>
+                                    Zhan Li*, Yongtao Wu*, <strong>Yihang Chen*</strong>, Francesco Tonin, Elias Abad Rocamora, Volkan Cevher
+                                    <br>
+                                    <em>38th Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</em>, 2024
+                                    <br>
+                                    <a href="">[arxiv]</a> / <a href="https://github.com/LIONS-EPFL/VL-MIA">[code]</a> 
+                                    <p>
+                                    </p>
+                                    <p>
+                                        We introduce the first membership inference attack (MIA) benchmark for VLLMs. 
+                                        We also propose the first cross-model MIA pipeline with a new MIA metric.
+                                    </p>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td style="padding:20px;width:25%;vertical-align:middle">
+                                    <div class="container">
                                         <img src='images/24_icml_kernel.jpg' width="100%" align="center">
                                     </div>
                                 </td>
@@ -114,10 +134,9 @@
                                     <br>
                                     <strong>Yihang Chen</strong>, Fanghui Liu, Taiji Suzuki, Volkan Cevher
                                     <br>
-                                    <em>International Conference on Machine Learning (<b>ICML</b>)</em>, 2024
+                                    <em>41st International Conference on Machine Learning (<b>ICML</b>)</em>, 2024
                                     <br>
-                                    <a href="https://arxiv.org/abs/2406.03171">
-                                        [arxiv]</a> 
+                                    <a href="https://arxiv.org/abs/2406.03171">[arxiv]</a> 
                                     <p>
                                     </p>
                                     <p>
@@ -130,8 +149,8 @@
 
                             <tr>
                                 <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/24_iclr_gfn.png' width="100%" align="center">
+                                    <div class="container">
+                                        <img src='images/24_iclr_gfn.jpeg' width="100%" align="center">
                                     </div>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -141,15 +160,12 @@
                                     <br>
                                     <strong>Yihang Chen</strong>, Lukas Mauch
                                     <br>
-                                    <em>International Conference on Learning Representations (<b>ICLR</b>)</em>, 2024
+                                    <em>12th International Conference on Learning Representations (<b>ICLR</b>)</em>, 2024
                                     <br>
-                                    <a href="https://arxiv.org/abs/2310.00386">
-                                        [arxiv]</a> / <a href="https://github.com/yhangchen/OP-GFN">
-                                        [code]</a> / <a href="data/24_iclr_gfn.pdf">
-                                        [slides]</a>
+                                    <a href="https://arxiv.org/abs/2310.00386">[arxiv]</a> / <a href="https://github.com/yhangchen/OP-GFN">[code]</a> / <a href="data/24_iclr_gfn.pdf">[slides]</a>
                                     <p>
                                         We propose Order-Preserving GFlowNets (OP-GFNs), which sample composite objects
-                                        given only the (partial) order, instead of the reward function. Therefore, GFlowNets can be applied to preference-based optimization. 
+                                        given only the (partial) order. We extend GFlowNets to preference-based optimization. 
                                     </p>
                                     <p>
 
@@ -159,8 +175,8 @@
 
                             <tr>
                                 <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src="images/24_iclr_resnet.png" width="160">
+                                    <div class="container">
+                                        <img src="images/24_iclr_resnet.jpeg" width="160">
                                     </div>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -172,7 +188,7 @@
                                     <strong>Yihang Chen</strong>, Fanghui Liu, Yiping Lu, Grigorios Chrysos, Volkan
                                     Cevher
                                     <br>
-                                    <em>International Conference on Learning Representations (<b>ICLR</b>)</em>, <font
+                                    <em>12th International Conference on Learning Representations (<b>ICLR</b>)</em>, <font
                                         color=#FF8080>
                                         <strong>Spotlight</strong>
                                     </font>, 2024
@@ -187,15 +203,14 @@
                             </tr>
                             <tr>
                                 <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="one">
-                                        <img src='images/20_neurips_pruning.png' width="100%" align="center">
+                                    <div class="container">
+                                        <img src='images/20_neurips_pruning.jpeg' width="100%" align="center">
                                     </div>
                                 </td>
                                 <td style="padding:20px;width:75%;vertical-align:middle">
                                     <a
                                         href="https://proceedings.neurips.cc/paper/2020/hash/eae27d77ca20db309e056e3d2dcd7d69-Abstract.html">
-                                        <span class="papertitle">Sanity-Checking Pruning Methods: Random Tickets can Win
-                                            the Jackpot</span>
+                                        <span class="papertitle">Sanity-Checking Pruning Methods: Random Tickets can Win the Jackpot</span>
                                     </a>
                                     <br>
                                     Jingtong Su*, <strong>Yihang Chen*</strong>, Tianle Cai*, Tianhao Wu, Ruiqi Gao,
@@ -207,10 +222,8 @@
                                     <a href="http://arxiv.org/abs/2009.11094">[arxiv]</a> / <a href="https://github.com/yhangchen/sanity-checking-pruning">[code]</a>
                                     / <a href="data/20_neurips_pruning.pdf">[slides]</a>
                                     <p>
-                                        We sanity-check prune-at-init methods, and find them hardly exploits any
-                                        information from the training data. We also propose "zero-shot" pruning, which
-                                        only relies on simple data-independent
-                                        pruning ratios for each layer.
+                                        We sanity-check prune-at-init methods, and find them hardly exploits any information from the training data. 
+                                        We also propose "zero-shot" pruning, which only relies on simple data-independent pruning ratios for each layer.
                                     </p>
                                 </td>
                             </tr>
@@ -229,6 +242,30 @@
                         </tbody>
                     </table>
 
+
+                    <table width="100%" align="center" border="0" cellpadding="20">
+                        <tbody>
+                            <tr>
+                                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                                    <h2>Honors and Awards </h2>
+                                </td>
+                                <td width="75%" valign="middle">
+                                    NeurIPS 2024 Scholar Award, 2024.
+                                    <br>
+                                    Research Scholars MSc Program, EPFL, 2021-2022.
+                                    <br>
+                                    The Elite Undergraduate Training Program of Applied Math, 2019-2021.
+                                    <br>
+                                    Excellent Graduate of Peking University, 2021.
+                                    <br>
+                                    National Scholarship, People's Republic of China (Top 1%), 2020.
+                                    <br>
+                                    Shing Tung Yau Mathematics Awards, Chia Chiao Lin Medals, Bronze, 2020.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
                     <table width="100%" align="center" border="0" cellpadding="20">
                         <tbody>
                             <tr>
@@ -246,26 +283,28 @@
                         <tbody>
                             <tr>
                                 <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                                    <h2>Honors and Awards </h2>
+                                    <h2>Services </h2>
                                 </td>
                                 <td width="75%" valign="middle">
-                                    Research Scholars MSc Program, EPFL, 2021-2022.
-                                    <br>
-                                    Excellent Graduate of Peking University, 2021.
-                                    <br>
-                                    National Scholarship, Ministry of Education of the People's Republic of China (Top
-                                    1%), 2020.
-                                    <br>
-                                    Shing Tung Yau Mathematics Awards, Chia Chiao Lin Medals, Bronze, 2020.
-                                    <br>
-                                    Exceptional Award for Academic Innovation, Peking University, 2020.
-                                    <br>
-                                    The Elite Undergraduate Training Program of Applied Math, 2019-2021.
+                                    Conference Reviewers: NeurIPS 2024, ICLR 2025, AISTATS 2025. 
                                 </td>
                             </tr>
                         </tbody>
                     </table>
 
+                    <table width="100%" align="center" border="0" cellpadding="20">
+                        <tbody>
+                            <tr>
+                                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
+                                    <h2>Fun Facts </h2>
+                                </td>
+                                <td width="75%" valign="middle">
+                                    During my stay in Switzerland, I hiked the <a href="miscellanea/via_alpina.pdf"> Via Alpina</a>. 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
                     <table
                         style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tbody>
@@ -273,9 +312,7 @@
                                 <td style="padding:0px">
                                     <br>
                                     <p style="text-align:center;font-size:small;">
-                                        Last Modified: June 11th, 2024. Website template from <a
-                                            href="https://github.com/jonbarron/jonbarron_website">
-                                            Jon Barron</a>.
+                                        Last Modified: October 14th, 2024. Website template from <a href="https://github.com/jonbarron/jonbarron_website"> Jon Barron</a>.
                                     </p>
                                 </td>
                             </tr>
