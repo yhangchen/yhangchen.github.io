@@ -1,406 +1,834 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <title>Yihang Chen</title>
-
-    <meta name="author" content="Yihang Chen">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-</head>
-
-<style>
-    .container {
-      display: flex;
-      justify-content: center; /* Horizontally centers */
-      align-items: center;    /* Vertically centers */
-    }
-</style>
-  
-
-
-<body>
-    <table
-        style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-        <tbody>
-            <tr style="padding:0px">
-                <td style="padding:0px">
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr style="padding:0px">
-                                <td style="padding:2.5%;width:63%;vertical-align:middle">
-                                    <p class="name" style="text-align: center;">
-                                        Yihang Chen 陈奕行
-                                    </p>
-                                    <p> I am a PhD student in computer science at <a href="https://www.cs.ucla.edu/">UCLA</a>, advised by Prof. <a href="https://web.cs.ucla.edu/~chohsieh/">Cho-Jui Hsieh</a>.
-                                        I received my bachelor degree in computational mathematics at <a href="https://english.pku.edu.cn"> Peking University</a> in July 2021, advised by Prof. <a href="http://www.liweiwang-pku.com"> Liwei Wang</a>; 
-                                        and my master degree in data science at <a href="https://epfl.ch">EPFL</a> in February 2024, advised by Prof. <a href="https://people.epfl.ch/volkan.cevher"> Volkan Cevher</a>. 
-                                    </p>
-                                    <p style="text-align:center">
-                                        <a href="mailto:yhangchen@cs.ucla.edu">Email</a> &nbsp;/&nbsp;
-                                        <a href="https://www.overleaf.com/read/thnhrbrfrbvq#7aed11">CV</a> &nbsp;/&nbsp;
-                                        <a href="https://scholar.google.com/citations?user=HzlOQRkAAAAJ&hl">Google
-                                            Scholar</a>
-                                        &nbsp;/&nbsp;
-                                        <a href="https://twitter.com/brandonchen991">Twitter</a> &nbsp;/&nbsp;
-                                        <a href="https://github.com/yhangchen">Github</a> &nbsp;/&nbsp;
-                                        <a href="https://www.linkedin.com/in/yihang-chen-177862194">LinkedIn</a>
-                                    </p>
-                                </td>
-                                <td style="padding:2.5%;width:40%;max-width:40%">
-                                    <a href="./images/bio.jpg"><img
-                                            style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;"
-                                            alt="profile photo" src="./images/bio.jpg" class="hoverZoomLink"></a>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <h2>Research</h2>
-                                    <p>
-                                        I have a broad interest in large language models and other generative models. Currently, my current research mainly focus on: </p>
-                                    <ul>
-                                        <li> LLM Safety: Jailbreaking, Membership Inference Attacks.</li>
-                                        <li> LLM Alignment: Preference Optimization, Parameter-Efficient Finetuning</li>
-                                        <li> Sampling: MCMC, Generative Flow Networks.</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <h2>What's New?</h2>
-                                    <ul>
-                                        <li> [Sept 10, 2025] I am honored to receive the Amazon Fellowship.  </li>
-                                        <li> [June 16, 2025] I start my applied science internship at Amazon in Palo Alto, CA. </li>
-                                        <li> [May 19, 2025] I am honored to be one of the <a href="https://iclr.cc/Conferences/2025/Reviewers"> ootable reviewers </a> of ICLR 2025.</li>
-                                        <li> [Nov 3, 2024] I am honored to be one of the <a href="https://neurips.cc/Conferences/2024/ProgramCommittee#top-reviewers"> top reviewers </a> of NeurIPS 2024.</li>
-                                        <li> [Oct 28, 2024] Our work on the <a href=""> multi-step preference optimization</a> is accepted to be the oral presentation on Language Gamification Workshop @ NeurIPS 2024. </li>
-                                        <li> [Oct 11, 2024] I am honored to receive the NeurIPS 2024 Scholar Award with financial assistance.</li>
-                                        <li> [Sept 25, 2024] Our work on the <a href="http://arxiv.org/abs/2411.02902">privacy of large language models</a> is accepted by NeurIPS 2024. </li>
-                                        <li> [Sept 23, 2024] I start my PhD at UCLA. </li>    
-                                    </ul>
-                            </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:100%;vertical-align:middle">
-                                    <h2>Publications</h2>
-                                    <p>
-                                        * indicates equal contribution
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/25_preprint_iris.png' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="">
-                                        <span class="papertitle">IRIS: Intrinsic Reward Image Synthesis
-                                        </span>
-                                    </a>
-                                    <br>
-                                    <strong>Yihang Chen*</strong>, Yuanhao Ban*, Yunqi Hong, Cho-Jui Hsieh
-                                    <br>
-                                    Under review. 
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2509.25562">[arxiv]</a> 
-                                    <p>
-                                        We propose IRIS, the first framework to improve autoregressive T2I models with reinforcement learning using only an intrinsic reward.
-                                    </p>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/25_preprint_diffcap.png' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="">
-                                        <span class="papertitle">DiffCAP: Diffusion-based Cumulative Adversarial Purification for Vision Language Models
-                                        </span>
-                                    </a>
-                                    <br>
-                                    Jia Fu, Yongtao Wu, <strong>Yihang Chen</strong>, Kunyu Peng, Xiao Zhang, Volkan Cevher, Sepideh Pashami, Anders Holst
-                                    <br>
-                                    Under review. 
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2506.03933">[arxiv]</a> 
-                                    <p>
-                                        We propose an adaptive diffusion-based purification strategy that can effectively neutralize adversarial corruptions in vision-language models.
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/24_langame_mpo.png' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="">
-                                        <span class="papertitle">Multi-Step Alignment as Markov Games: An Optimistic Online Gradient Descent Approach with Convergence Guarantees</span>
-                                    </a>
-                                    <br>
-                                    Yongtao Wu*, Luca Viano*, <strong>Yihang Chen</strong>, Zhenyu Zhu,  Kimon Antonakopoulos, Quanquan Gu, Volkan Cevher
-                                    <br>
-                                    Under review. Abridged in <em>Language Gamification Workshop @ NeurIPS, <font color=#FF8080><strong>Spotlight</strong></font></em>, 2024
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2502.12678">[arxiv]</a> / <a href="https://openreview.net/forum?id=Q8Ee3yrwC6">[workshop]</a> / <a href="posters/24_neurips_langame_mpo.pdf">[workshop poster]</a>
-                                    <p>
-                                        We model the multi-step preference alignment problem as a two-player constant-sum Markov game. We propose the MPO, a natural actor-critic algorithm; and the OMPO, an optimistic online
-                                        gradient descent algorithm. 
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/24_neurips_mia.jpg' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://openreview.net/forum?id=nv2Qt5cj1a&referrer">
-                                        <span class="papertitle">Membership Inference Attacks against Large Vision-Language Models</span>
-                                    </a>
-                                    <br>
-                                    Zhan Li*, Yongtao Wu*, <strong>Yihang Chen*</strong>, Francesco Tonin, Elias Abad Rocamora, Volkan Cevher
-                                    <br>
-                                    <em>38th Annual Conference on Neural Information Processing Systems (<b>NeurIPS</b>)</em>, 2024
-                                    <br>
-                                    <a href="http://arxiv.org/abs/2411.02902">[arxiv]</a> / <a href="https://github.com/LIONS-EPFL/VL-MIA">[code]</a> / <a href="posters/24_neurips_mia.pdf">[poster]</a>
-                                    <p>
-                                        We introduce the first membership inference attack (MIA) benchmark for vision language models. 
-                                        We also propose the first cross-model MIA pipeline with a new MIA metric.
-                                    </p>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/24_icml_kernel.jpg' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://openreview.net/forum?id=bBzlapzeR1&noteId=AWFN8b6TKC">
-                                        <span class="papertitle">High-Dimensional Kernel Methods under Covariate Shift: Data-Dependent Implicit Regularization</span>
-                                    </a>
-                                    <br>
-                                    <strong>Yihang Chen</strong>, Fanghui Liu, Taiji Suzuki, Volkan Cevher
-                                    <br>
-                                    <em>41st International Conference on Machine Learning (<b>ICML</b>)</em>, 2024
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2406.03171">[arxiv]</a> / <a href="posters/24_icml_kernel.pdf">[poster]</a>
-                                    <p>
-                                        We study kernel ridge regression in high dimensions under covariate shifts and analyzes the role of importance re-weighting.
-                                        We also provide asymptotic expansion of kernel functions/vectors under covariate shift.
-                                    </p>
-                                </td>
-                            </tr>
-
-
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/24_iclr_gfn.jpeg' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://openreview.net/forum?id=VXDPXuq4oG">
-                                        <span class="papertitle">Order-Preserving GFlowNets</span>
-                                    </a>
-                                    <br>
-                                    <strong>Yihang Chen</strong>, Lukas Mauch
-                                    <br>
-                                    <em>12th International Conference on Learning Representations (<b>ICLR</b>)</em>, 2024
-                                    <br>
-                                    <a href="https://arxiv.org/abs/2310.00386">[arxiv]</a> / <a href="https://github.com/yhangchen/OP-GFN">[code]</a> / <a href="posters/24_iclr_gfn.pdf">[poster]</a> / <a href="slides/24_iclr_gfn.pdf">[slides]</a> / <a href="https://patents.google.com/patent/WO2025061851A1/en?oq=wo2025061851">[patent]</a>
-                                    <p>
-                                        We propose Order-Preserving GFlowNets (OP-GFNs), which sample composite objects
-                                        given only the (partial) order. We extend GFlowNets to preference-based optimization in single and multi-objective sampling. 
-                                    </p>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src="images/24_iclr_resnet.jpeg" width="160">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a href="https://openreview.net/forum?id=tMzPZTvz2H">
-                                        <span class="papertitle">Generalization of Scaled
-                                            Deep ResNets in the Mean-Field Regime</span>
-                                    </a>
-                                    <br>
-                                    <strong>Yihang Chen</strong>, Fanghui Liu, Yiping Lu, Grigorios Chrysos, Volkan
-                                    Cevher
-                                    <br>
-                                    <em>12th International Conference on Learning Representations (<b>ICLR</b>)</em>, <font color=#FF8080><strong>Spotlight</strong></font>, 2024
-                                    <br>
-                                    <a href="http://arxiv.org/abs/2403.09889">[arxiv]</a> / <a href="posters/24_iclr_resnet.pdf">[poster]</a> / <a href="slides/24_iclr_resnet.pdf">[slides]</a>
-                                    <p>
-                                        We provide the upper bound of the parameter distribution moving and
-                                        generalization error on the 0-1 classification task of the
-                                        infinitely deep and wide ResNets.
-                                    </p>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td style="padding:20px;width:25%;vertical-align:middle">
-                                    <div class="container">
-                                        <img src='images/20_neurips_pruning.jpeg' width="100%" align="center">
-                                    </div>
-                                </td>
-                                <td style="padding:20px;width:75%;vertical-align:middle">
-                                    <a
-                                        href="https://proceedings.neurips.cc/paper/2020/hash/eae27d77ca20db309e056e3d2dcd7d69-Abstract.html">
-                                        <span class="papertitle">Sanity-Checking Pruning Methods: Random Tickets can Win the Jackpot</span>
-                                    </a>
-                                    <br>
-                                    Jingtong Su*, <strong>Yihang Chen*</strong>, Tianle Cai*, Tianhao Wu, Ruiqi Gao,
-                                    Liwei Wang, Jason D. Lee.
-                                    <br>
-                                    <em>34th Annual Conference on Neural Information Processing Systems
-                                        (<b>NeurIPS</b>)</em>, 2020
-                                    <br>
-                                    <a href="http://arxiv.org/abs/2009.11094">[arxiv]</a> / <a href="https://github.com/yhangchen/sanity-checking-pruning">[code]</a>
-                                    / <a href="slides/20_neurips_pruning.pdf">[slides]</a>
-                                    <p>
-                                        We sanity-check prune-at-init methods, and find them hardly exploits any information from the training data. 
-                                        We propose "zero-shot" pruning, which only relies on simple data-independent pruning ratios for each layer.
-                                    </p>
-                                </td>
-                            </tr>
-
-                        </tbody>
-                    </table>
-
-
-                    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <h2>Miscellanea</h2>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
-                    <table width="100%" align="center" border="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                                    <h2>Honors and Awards </h2>
-                                </td>
-                                <td width="75%" valign="middle">
-                                    ICLR 2025 Notable Reviewers, 2025.
-                                    <br>
-                                    NeurIPS 2024 Scholar Award & Top Reviewers, 2024.
-                                    <br>
-                                    Research Scholars MSc Program, EPFL, 2021-2022.
-                                    <br>
-                                    The Elite Undergraduate Training Program of Applied Math, 2019-2021.
-                                    <br>
-                                    Excellent Graduate of Peking University, 2021.
-                                    <br>
-                                    National Scholarship, People's Republic of China (Top 1%), 2020.
-                                    <br>
-                                    Shing Tung Yau Mathematics Awards, Chia Chiao Lin Medals, Bronze, 2020.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table width="100%" align="center" border="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                                    <h2>Invited Talks </h2>
-                                </td>
-                                <td width="75%" valign="middle">
-                                    Mila GFlowNet meeting, <em>Order-Preserving GFlowNets,</em> 2023.10.04.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" align="center" border="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                                    <h2>Services </h2>
-                                </td>
-                                <td width="75%" valign="middle">
-                                    Conference Reviewers: NeurIPS 2024, ICLR 2025, AISTATS 2025, ICML 2025, NeurIPS 2025 (upcoming). 
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-                    <table width="100%" align="center" border="0" cellpadding="20">
-                        <tbody>
-                            <tr>
-                                <td align="center" style="padding:20px;width:25%;vertical-align:middle">
-                                    <h2>Fun Facts </h2>
-                                </td>
-                                <td width="75%" valign="middle">
-                                    During my stay in Switzerland, I finished the <a href="miscellanea/via_alpina.pdf"> Via Alpina</a> hiking. 
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    
-                    <table
-                        style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tbody>
-                            <tr>
-                                <td style="padding:0px">
-                                    <br>
-                                    <p style="text-align:center;font-size:small;">
-                                        Last Updated: June 18th, 2025. Website template from <a href="https://github.com/jonbarron/jonbarron_website"> Jon Barron</a>.
-                                    </p>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </td>
-            </tr>
-    </table>
-</body>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Yihang Chen" name="author"/>
+  <meta content="Yihang Chen, computer science PhD student at UCLA. Research in LLM post-training, generative models, and AI safety." name="description"/>
+  <meta content="#f8f7f3" name="theme-color"/>
+  <title>
+   Yihang Chen | UCLA
+  </title>
+  <link href="images/favicon/favicon.ico" rel="icon"/>
+  <link href="stylesheet.css" rel="stylesheet"/>
+ </head>
+ <body id="top">
+  <a class="skip-link" href="#main">
+   Skip to content
+  </a>
+  <header class="site-header">
+   <a class="wordmark" href="#top">
+    YC
+    <span>
+     .
+    </span>
+   </a>
+   <nav aria-label="Main navigation">
+    <a href="#research">
+     Research
+    </a>
+    <a href="#publications">
+     Publications
+    </a>
+    <a href="#news">
+     News
+    </a>
+    <a href="mailto:yhangchen@cs.ucla.edu">
+     Contact
+     <span aria-hidden="true">
+      ↗
+     </span>
+    </a>
+   </nav>
+  </header>
+  <main id="main">
+   <section aria-labelledby="name" class="hero">
+    <div>
+     <p class="eyebrow">
+      UCLA · COMPUTER SCIENCE
+     </p>
+     <h1 id="name">
+      Yihang Chen
+      <span lang="zh">
+       陈奕行
+      </span>
+     </h1>
+     <p class="hero-subtitle">
+      Exploring learning &amp; generative intelligence.
+     </p>
+     <p>
+      I am a PhD student in computer science at
+      <a href="https://www.cs.ucla.edu/">
+       UCLA
+      </a>
+      , advised by Prof.
+      <a href="https://web.cs.ucla.edu/~chohsieh/">
+       Cho-Jui Hsieh
+      </a>
+      . I received my bachelor’s degree in computational mathematics at
+      <a href="https://english.pku.edu.cn">
+       Peking University
+      </a>
+      in July 2021, advised by Prof.
+      <a href="http://www.liweiwang-pku.com">
+       Liwei Wang
+      </a>
+      ; and my master’s degree in data science at
+      <a href="https://epfl.ch">
+       EPFL
+      </a>
+      in February 2024, advised by Prof.
+      <a href="https://people.epfl.ch/volkan.cevher">
+       Volkan Cevher
+      </a>
+      .
+     </p>
+     <div aria-label="Profile links" class="social-links">
+      <a href="mailto:yhangchen@cs.ucla.edu">
+       Email
+      </a>
+      <a href="https://www.overleaf.com/read/thnhrbrfrbvq#7aed11">
+       CV
+      </a>
+      <a href="https://scholar.google.com/citations?user=HzlOQRkAAAAJ&amp;hl">
+       Google
+                                            Scholar
+      </a>
+      <a href="https://twitter.com/brandonchen991">
+       Twitter
+      </a>
+      <a href="https://github.com/yhangchen">
+       GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/yihang-chen-177862194">
+       LinkedIn
+      </a>
+     </div>
+    </div>
+    <figure class="portrait">
+     <img alt="Yihang Chen" height="280" src="images/bio.jpg" width="280"/>
+     <figcaption>
+      PhD student · Los Angeles, CA
+     </figcaption>
+    </figure>
+   </section>
+   <section class="research-section" id="research">
+    <div class="section-heading">
+     <span class="section-number">
+      01
+     </span>
+     <h2>
+      Research
+     </h2>
+    </div>
+    <p>
+     My research focuses on LLM post-training, generative models, and AI safety:
+    </p>
+    <ul class="research-topics">
+     <li>
+      <span>
+       01 / POST-TRAINING
+      </span>
+      <h3>
+       LLM post-training
+      </h3>
+      <p>
+       Reinforcement learning with verifiable rewards (RLVR), preference optimization &amp; off-policy learning
+      </p>
+     </li>
+     <li>
+      <span>
+       02 / GENERATIVE MODELS
+      </span>
+      <h3>
+       Generative models
+      </h3>
+      <p>
+       Diffusion models &amp; reward optimization
+      </p>
+     </li>
+     <li>
+      <span>
+       03 / AI SAFETY
+      </span>
+      <h3>
+       AI safety
+      </h3>
+      <p>
+       Jailbreaking, robustness &amp; privacy
+      </p>
+     </li>
+    </ul>
+   </section>
+   <section class="news-section" id="news">
+    <div class="section-heading">
+     <span class="section-number">
+      02
+     </span>
+     <h2>
+      What's new
+     </h2>
+    </div>
+    <ul class="news-list">
+     <li>
+      <time class="news-date" datetime="2026-09-11">
+       <span>
+        Sep 11
+       </span>
+       <span class="news-year">
+        2026
+       </span>
+      </time>
+      <div class="news-copy">
+       New preprint:
+       <a href="https://arxiv.org/abs/2609.13425">
+        ReCAST
+       </a>
+       explores reward credit assignment across diffusion timesteps.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2025-09-10">
+       <span>
+        Sep 10
+       </span>
+       <span class="news-year">
+        2025
+       </span>
+      </time>
+      <div class="news-copy">
+       I am honored to receive the Amazon Fellowship.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2025-06-16">
+       <span>
+        Jun 16
+       </span>
+       <span class="news-year">
+        2025
+       </span>
+      </time>
+      <div class="news-copy">
+       I start my applied science internship at Amazon in Palo Alto, CA.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2025-05-19">
+       <span>
+        May 19
+       </span>
+       <span class="news-year">
+        2025
+       </span>
+      </time>
+      <div class="news-copy">
+       I am honored to be one of the
+       <a href="https://iclr.cc/Conferences/2025/Reviewers">
+        notable reviewers
+       </a>
+       of ICLR 2025.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2024-11-03">
+       <span>
+        Nov 3
+       </span>
+       <span class="news-year">
+        2024
+       </span>
+      </time>
+      <div class="news-copy">
+       I am honored to be one of the
+       <a href="https://neurips.cc/Conferences/2024/ProgramCommittee#top-reviewers">
+        top reviewers
+       </a>
+       of NeurIPS 2024.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2024-10-28">
+       <span>
+        Oct 28
+       </span>
+       <span class="news-year">
+        2024
+       </span>
+      </time>
+      <div class="news-copy">
+       Our work on the
+       <a href="https://arxiv.org/abs/2502.12678">
+        multi-step preference optimization
+       </a>
+       is accepted to be the oral presentation on Language Gamification Workshop @ NeurIPS 2024.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2024-10-11">
+       <span>
+        Oct 11
+       </span>
+       <span class="news-year">
+        2024
+       </span>
+      </time>
+      <div class="news-copy">
+       I am honored to receive the NeurIPS 2024 Scholar Award with financial assistance.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2024-09-25">
+       <span>
+        Sep 25
+       </span>
+       <span class="news-year">
+        2024
+       </span>
+      </time>
+      <div class="news-copy">
+       Our work on the
+       <a href="http://arxiv.org/abs/2411.02902">
+        privacy of large language models
+       </a>
+       is accepted by NeurIPS 2024.
+      </div>
+     </li>
+     <li>
+      <time class="news-date" datetime="2024-09-23">
+       <span>
+        Sep 23
+       </span>
+       <span class="news-year">
+        2024
+       </span>
+      </time>
+      <div class="news-copy">
+       I start my PhD at UCLA.
+      </div>
+     </li>
+    </ul>
+   </section>
+   <section id="publications">
+    <div class="section-heading">
+     <span class="section-number">
+      03
+     </span>
+     <h2>
+      Publications
+     </h2>
+     <span class="section-note">
+      * Equal contribution
+     </span>
+    </div>
+    <div class="publication-list">
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: ReCAST: Reward Credit Assignment across Timesteps for Online Diffusion Reinforcement" class="diagram-link" href="images/publications/recast-diagram.jpg" rel="noopener" style="--heading-trim: 8%; --heading-background: #fffdf4;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          ReCAST
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Reward-specific weights vary across denoising steps while preserving reward budgets." height="1024" loading="lazy" src="images/publications/recast-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        DIFFUSION · REWARD OPTIMIZATION
+       </span>
+       <a href="https://arxiv.org/abs/2609.13425">
+        <h3>
+         ReCAST: Reward Credit Assignment across Timesteps for Online Diffusion Reinforcement
+        </h3>
+       </a>
+       <strong>
+        Yihang Chen
+       </strong>
+       , Yuanhao Ban, Kuei-Chun Kao, Cho-Jui Hsieh
+       <br/>
+       arXiv preprint, September 2026.
+       <br/>
+       <a href="https://arxiv.org/abs/2609.13425">
+        [arxiv]
+       </a>
+       /
+       <a href="https://arxiv.org/pdf/2609.13425">
+        [pdf]
+       </a>
+       <p>
+        We assign each reward greater weight at the denoising timesteps where its feedback is most informative, while preserving user-specified reward budgets.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: IRIS: Intrinsic Reward Image Synthesis" class="diagram-link" href="images/publications/iris-diagram.jpg" rel="noopener" style="--heading-trim: 8%; --heading-background: #ffffff;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          IRIS
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Negative self-certainty supplies the intrinsic reward for image-generation RL." height="1024" loading="lazy" src="images/publications/iris-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        IMAGE GENERATION · INTRINSIC REWARDS
+       </span>
+       <a href="https://arxiv.org/abs/2509.25562">
+        <h3>
+         IRIS: Intrinsic Reward Image Synthesis
+        </h3>
+       </a>
+       <strong>
+        Yihang Chen*
+       </strong>
+       , Yuanhao Ban*, Yunqi Hong, Cho-Jui Hsieh
+       <br/>
+       Under review.
+       <br/>
+       <a href="https://arxiv.org/abs/2509.25562">
+        [arxiv]
+       </a>
+       <p>
+        We propose IRIS, the first framework to improve autoregressive T2I models with reinforcement learning using only an intrinsic reward.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: DiffCAP: Diffusion-based Cumulative Adversarial Purification for Vision Language Models" class="diagram-link" href="images/publications/diffcap-diagram-v2.jpg" rel="noopener" style="--heading-trim: 18%; --heading-background: #fffef6;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          DiffCAP
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Add noise until embeddings stabilize, then denoise before VLM inference." height="1024" loading="lazy" src="images/publications/diffcap-diagram-v2.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        VISION-LANGUAGE MODELS · ROBUSTNESS
+       </span>
+       <a href="https://arxiv.org/abs/2506.03933">
+        <h3>
+         DiffCAP: Diffusion-based Cumulative Adversarial Purification for Vision Language Models
+        </h3>
+       </a>
+       Jia Fu, Yongtao Wu,
+       <strong>
+        Yihang Chen
+       </strong>
+       , Kunyu Peng, Xiao Zhang, Volkan Cevher, Sepideh Pashami, Anders Holst
+       <br/>
+       Under review.
+       <br/>
+       <a href="https://arxiv.org/abs/2506.03933">
+        [arxiv]
+       </a>
+       <p>
+        We propose an adaptive diffusion-based purification strategy that can effectively neutralize adversarial corruptions in vision-language models.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: Multi-Step Alignment as Markov Games: An Optimistic Online Gradient Descent Approach with Convergence Guarantees" class="diagram-link" href="images/publications/ompo-diagram.jpg" rel="noopener" style="--heading-trim: 11.3333%; --heading-background: #fffdf4;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          Multi-step alignment
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Compare policies at each turn and update them using multi-step preferences." height="1024" loading="lazy" src="images/publications/ompo-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        LLM ALIGNMENT · MARKOV GAMES
+       </span>
+       <a href="https://openreview.net/forum?id=ZWZKaqZCy0">
+        <h3>
+         Multi-Step Alignment as Markov Games: An Optimistic Online Gradient Descent Approach with Convergence Guarantees
+        </h3>
+       </a>
+       Yongtao Wu*, Luca Viano*, Kimon Antonakopoulos,
+       <strong>
+        Yihang Chen
+       </strong>
+       , Zhenyu Zhu, Quanquan Gu, Volkan Cevher
+       <br/>
+       Transactions on Machine Learning Research. Abridged in
+       <em>
+        Language Gamification Workshop @ NeurIPS, Spotlight, 2024
+       </em>
+       <br/>
+       <a href="https://arxiv.org/abs/2502.12678">
+        [arxiv]
+       </a>
+       /
+       <a href="https://openreview.net/forum?id=Q8Ee3yrwC6">
+        [workshop]
+       </a>
+       /
+       <a href="posters/24_neurips_langame_mpo.pdf">
+        [workshop poster]
+       </a>
+       <p>
+        We model the multi-step preference alignment problem as a two-player constant-sum Markov game. We propose the MPO, a natural actor-critic algorithm; and the OMPO, an optimistic online gradient descent algorithm.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: Membership Inference Attacks against Large Vision-Language Models" class="diagram-link" href="images/publications/membership-diagram.jpg" rel="noopener" style="--heading-trim: 6.66667%; --heading-background: #ffffff;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          Membership inference
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Use image and text output statistics to detect training-data membership." height="1024" loading="lazy" src="images/publications/membership-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        VISION-LANGUAGE MODELS · PRIVACY
+       </span>
+       <a href="https://openreview.net/forum?id=nv2Qt5cj1a&amp;referrer">
+        <h3>
+         Membership Inference Attacks against Large Vision-Language Models
+        </h3>
+       </a>
+       Zhan Li*, Yongtao Wu*,
+       <strong>
+        Yihang Chen*
+       </strong>
+       , Francesco Tonin, Elias Abad Rocamora, Volkan Cevher
+       <br/>
+       <em>
+        38th Annual Conference on Neural Information Processing Systems (
+        <b>
+         NeurIPS
+        </b>
+        )
+       </em>
+       , 2024
+       <br/>
+       <a href="http://arxiv.org/abs/2411.02902">
+        [arxiv]
+       </a>
+       /
+       <a href="https://github.com/LIONS-EPFL/VL-MIA">
+        [code]
+       </a>
+       /
+       <a href="posters/24_neurips_mia.pdf">
+        [poster]
+       </a>
+       <p>
+        We introduce the first membership inference attack (MIA) benchmark for vision language models. We also propose the first cross-model MIA pipeline with a new MIA metric.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: High-Dimensional Kernel Methods under Covariate Shift: Data-Dependent Implicit Regularization" class="diagram-link" href="images/publications/kernel-diagram.jpg" rel="noopener" style="--heading-trim: 6.66667%; --heading-background: #fffdf4;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          Kernel methods under shift
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Importance weighting changes the bias–variance trade-off under covariate shift." height="1024" loading="lazy" src="images/publications/kernel-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        LEARNING THEORY · DISTRIBUTION SHIFT
+       </span>
+       <a href="https://openreview.net/forum?id=bBzlapzeR1&amp;noteId=AWFN8b6TKC">
+        <h3>
+         High-Dimensional Kernel Methods under Covariate Shift: Data-Dependent Implicit Regularization
+        </h3>
+       </a>
+       <strong>
+        Yihang Chen
+       </strong>
+       , Fanghui Liu, Taiji Suzuki, Volkan Cevher
+       <br/>
+       <em>
+        41st International Conference on Machine Learning (
+        <b>
+         ICML
+        </b>
+        )
+       </em>
+       , 2024
+       <br/>
+       <a href="https://arxiv.org/abs/2406.03171">
+        [arxiv]
+       </a>
+       /
+       <a href="posters/24_icml_kernel.pdf">
+        [poster]
+       </a>
+       <p>
+        We study kernel ridge regression in high dimensions under covariate shifts and analyzes the role of importance re-weighting. We also provide asymptotic expansion of kernel functions/vectors under covariate shift.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: Order-Preserving GFlowNets" class="diagram-link" href="images/publications/gflownet-diagram.jpg" rel="noopener" style="--heading-trim: 16.6667%; --heading-background: #ffffff;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          Order-preserving GFlowNets
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Learn rewards from candidate orderings, then sample through a GFlowNet." height="1024" loading="lazy" src="images/publications/gflownet-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        GENERATIVE FLOW NETWORKS · SAMPLING
+       </span>
+       <a href="https://openreview.net/forum?id=VXDPXuq4oG">
+        <h3>
+         Order-Preserving GFlowNets
+        </h3>
+       </a>
+       <strong>
+        Yihang Chen
+       </strong>
+       , Lukas Mauch
+       <br/>
+       <em>
+        12th International Conference on Learning Representations (
+        <b>
+         ICLR
+        </b>
+        )
+       </em>
+       , 2024
+       <br/>
+       <a href="https://arxiv.org/abs/2310.00386">
+        [arxiv]
+       </a>
+       /
+       <a href="https://github.com/yhangchen/OP-GFN">
+        [code]
+       </a>
+       /
+       <a href="posters/24_iclr_gfn.pdf">
+        [poster]
+       </a>
+       /
+       <a href="slides/24_iclr_gfn.pdf">
+        [slides]
+       </a>
+       /
+       <a href="https://patents.google.com/patent/WO2025061851A1/en?oq=wo2025061851">
+        [patent]
+       </a>
+       <p>
+        We propose Order-Preserving GFlowNets (OP-GFNs), which sample composite objects given only the (partial) order. We extend GFlowNets to preference-based optimization in single and multi-objective sampling.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: Generalization of Scaled Deep ResNets in the Mean-Field Regime" class="diagram-link" href="images/publications/resnet-diagram.jpg" rel="noopener" style="--heading-trim: 10%; --heading-background: #ffffff;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          ResNets in the mean-field regime
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Control parameter-distribution movement to derive generalization bounds." height="1024" loading="lazy" src="images/publications/resnet-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        LEARNING THEORY · DEEP NETWORKS
+       </span>
+       <a href="https://openreview.net/forum?id=tMzPZTvz2H">
+        <h3>
+         Generalization of Scaled Deep ResNets in the Mean-Field Regime
+        </h3>
+       </a>
+       <strong>
+        Yihang Chen
+       </strong>
+       , Fanghui Liu, Yiping Lu, Grigorios Chrysos, Volkan Cevher
+       <br/>
+       <em>
+        12th International Conference on Learning Representations (
+        <b>
+         ICLR
+        </b>
+        )
+       </em>
+       ,
+       <span class="distinction">
+        <strong>
+         Spotlight
+        </strong>
+       </span>
+       , 2024
+       <br/>
+       <a href="http://arxiv.org/abs/2403.09889">
+        [arxiv]
+       </a>
+       /
+       <a href="posters/24_iclr_resnet.pdf">
+        [poster]
+       </a>
+       /
+       <a href="slides/24_iclr_resnet.pdf">
+        [slides]
+       </a>
+       <p>
+        We provide the upper bound of the parameter distribution moving and generalization error on the 0-1 classification task of the infinitely deep and wide ResNets.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: Sanity-Checking Pruning Methods: Random Tickets can Win the Jackpot" class="diagram-link" href="images/publications/pruning-diagram.jpg" rel="noopener" style="--heading-trim: 10%; --heading-background: #fffdf4;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          Random tickets
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="Randomly retain edges using layerwise ratios, then train the sparse network." height="1024" loading="lazy" src="images/publications/pruning-diagram.jpg" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-topic">
+        NEURAL NETWORKS · PRUNING
+       </span>
+       <a href="https://proceedings.neurips.cc/paper/2020/hash/eae27d77ca20db309e056e3d2dcd7d69-Abstract.html">
+        <h3>
+         Sanity-Checking Pruning Methods: Random Tickets can Win the Jackpot
+        </h3>
+       </a>
+       Jingtong Su*,
+       <strong>
+        Yihang Chen*
+       </strong>
+       , Tianle Cai*, Tianhao Wu, Ruiqi Gao, Liwei Wang, Jason D. Lee.
+       <br/>
+       <em>
+        34th Annual Conference on Neural Information Processing Systems (
+        <b>
+         NeurIPS
+        </b>
+        )
+       </em>
+       , 2020
+       <br/>
+       <a href="http://arxiv.org/abs/2009.11094">
+        [arxiv]
+       </a>
+       /
+       <a href="https://github.com/yhangchen/sanity-checking-pruning">
+        [code]
+       </a>
+       /
+       <a href="slides/20_neurips_pruning.pdf">
+        [slides]
+       </a>
+       <p>
+        We sanity-check prune-at-init methods, and find them hardly exploits any information from the training data. We propose "zero-shot" pruning, which only relies on simple data-independent pruning ratios for each layer.
+       </p>
+      </div>
+     </article>
+    </div>
+   </section>
+   <div class="details">
+    <section class="detail-section">
+     <h2>
+      Honors and Awards
+     </h2>
+     <div>
+      ICLR 2025 Notable Reviewers, 2025.
+      <br/>
+      NeurIPS 2024 Scholar Award &amp; Top Reviewers, 2024.
+      <br/>
+      Research Scholars MSc Program, EPFL, 2021-2022.
+      <br/>
+      The Elite Undergraduate Training Program of Applied Math, 2019-2021.
+      <br/>
+      Excellent Graduate of Peking University, 2021.
+      <br/>
+      National Scholarship, People's Republic of China (Top 1%), 2020.
+      <br/>
+      Shing Tung Yau Mathematics Awards, Chia Chiao Lin Medals, Bronze, 2020.
+     </div>
+    </section>
+    <section class="detail-section">
+     <h2>
+      Invited Talks
+     </h2>
+     <div>
+      Mila GFlowNet meeting,
+      <em>
+       Order-Preserving GFlowNets,
+      </em>
+      2023.10.04.
+     </div>
+    </section>
+    <section class="detail-section">
+     <h2>
+      Services
+     </h2>
+     <div>
+      Conference Reviewers: ICLR 2025, 2026; ICML 2025; NeurIPS 2024, 2025, AISTATS 2025, CVPR 2026, ECCV 2026.
+     </div>
+    </section>
+    <section class="detail-section">
+     <h2>
+      Fun Facts
+     </h2>
+     <div>
+      During my stay in Switzerland, I finished the
+      <a href="miscellanea/via_alpina.pdf">
+       Via Alpina
+      </a>
+      hiking.
+     </div>
+    </section>
+   </div>
+  </main>
+  <footer>
+   <span>
+    © 2026 Yihang Chen
+   </span>
+   <span>
+    Updated September 15, 2026 · Adapted from
+    <a href="https://github.com/jonbarron/jonbarron_website">
+     Jon Barron
+    </a>
+   </span>
+   <a href="#top">
+    Back to top ↑
+   </a>
+  </footer>
+ </body>
 </html>
