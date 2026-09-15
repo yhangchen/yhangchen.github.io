@@ -548,3 +548,23 @@ footer {
   .news-list li { grid-template-columns: minmax(0, 1fr); gap: 6px; padding: 10px 0; }
   .news-date { width: 116px; }
 }
+
+/* Publication venue categories */
+.paper-venue {
+  display: inline-block;
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border: 1px solid #b9cbb7;
+  border-radius: 6px;
+  background: #e1e9dc;
+  color: #244c39;
+  font-size: 12px;
+  line-height: 1.3;
+  font-weight: 750;
+  letter-spacing: .4px;
+}
+.paper-venue[data-venue="arxiv"] { background: #f3e9df; border-color: #dfcbb8; color: #805333; }
+.paper-venue[data-venue="tmlr"] { background: #e2ebf5; border-color: #bdcfe3; color: #355879; }
+.paper-venue[data-venue="neurips"] { background: #eee5f3; border-color: #d5bfdf; color: #704984; }
+.paper-venue[data-venue="icml"] { background: #dfeeea; border-color: #b6d4cb; color: #286459; }
+.paper-venue[data-venue="iclr"] { background: #f4eddb; border-color: #dfd0a5; color: #756022; }

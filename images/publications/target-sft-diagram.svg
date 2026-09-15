@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="640" viewBox="0 0 960 640">
+<rect width="960" height="640" fill="#fffdf4"/>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="none" stroke="#426b63" stroke-width="1.5"/></marker></defs>
+<g font-family="Arial, sans-serif" text-anchor="middle" fill="#173f48">
+<rect x="45" y="35" width="370" height="220" rx="18" fill="#e7eef4" stroke="#a8bfce" stroke-width="2"/>
+<text x="230" y="78" font-size="25" font-weight="700">Demonstrated token</text>
+<path d="M100 211H360" stroke="#9ab0b9" stroke-width="2"/>
+<rect x="125" y="120" width="40" height="90" rx="4" fill="#5987a4"/>
+<text x="230" y="244" font-size="21">Trust in the observed label: γ</text>
+<rect x="545" y="35" width="370" height="220" rx="18" fill="#e6eee1" stroke="#a5bda5" stroke-width="2"/>
+<text x="730" y="78" font-size="25" font-weight="700">Plausible alternatives</text>
+<path d="M600 211H860" stroke="#9ab0a0" stroke-width="2"/>
+<g fill="#77a08c"><rect x="620" y="176" width="40" height="34" rx="4"/><rect x="680" y="141" width="40" height="69" rx="4"/><rect x="740" y="162" width="40" height="48" rx="4"/><rect x="800" y="186" width="40" height="24" rx="4"/></g>
+<text x="730" y="244" font-size="21">Remaining probability: 1 − γ</text>
+<g fill="none" stroke="#426b63" stroke-width="3" marker-end="url(#arrow)"><path d="M230 265V294L425 336"/><path d="M730 265V294L535 336"/></g>
+<rect x="220" y="345" width="520" height="125" rx="18" fill="#f6ecd3" stroke="#ccba88" stroke-width="2"/>
+<text x="480" y="389" font-size="26" font-weight="700">Designed target distribution Q</text>
+<text x="480" y="433" font-size="27">Q = γ δᵧ + (1 − γ) π̃</text>
+<path d="M480 480V527" stroke="#426b63" stroke-width="3" marker-end="url(#arrow)"/>
+<rect x="260" y="540" width="440" height="65" rx="14" fill="#dceae6" stroke="#9ab8ac" stroke-width="2"/>
+<text x="480" y="581" font-size="25" font-weight="700">Fine-tune toward Q</text>
+</g></svg>
