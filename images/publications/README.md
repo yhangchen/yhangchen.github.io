@@ -1,6 +1,13 @@
 # Publication method diagrams
 Created with the built-in ImageGen tool after reviewing the papers. Simplified explanatory diagrams, not measured results. Click a site figure to open it at full resolution.
 
+## respo
+- File: [respo-diagram-v3.png](respo-diagram-v3.png)
+- Role: homepage publication thumbnail; simplified sign-dependent gradient-allocation diagram.
+- Prompt:
+
+> Use case: scientific-educational. Create a clear explanatory diagram for the paper ReSPO, showing its core idea of sign-dependent sequence-level importance-weight reshaping for off-policy reinforcement learning. Landscape 3:2 on a warm ivory background, with dark teal outlines and typography, pale sage-green rounded boxes, restrained ochre highlights, simple icons, generous whitespace, crisp arrows, and no texture or photorealism. At the top, title “ReSPO”. Use two large side-by-side panels. In “Positive advantage”, show two correct-response icons: “low W” leads to “Preserve gradient”, while “high W” leads to “Suppress gradient”. In “Negative advantage”, show incorrect-response icons labeled “low W” and “high W”, both leading to “Suppress both extremes”. Merge both branches into “Stable off-policy update”. Make every label bold and readable at a 340-pixel thumbnail width. Keep all labels exact; no extra labels, equations beyond W, quantitative claims, watermark, logos, 3D, gradients, or clutter.
+
 ## recast
 - File: [recast-diagram.jpg](recast-diagram.jpg)
 - Source: https://arxiv.org/abs/2609.13425

@@ -171,6 +171,23 @@
     </div>
     <ul class="news-list">
      <li>
+      <time class="news-date" datetime="2026-09-28">
+       <span>
+        Sep 28
+       </span>
+       <span class="news-year">
+        2026
+       </span>
+      </time>
+      <div class="news-copy">
+       New preprint:
+       <a href="https://yhangchen.github.io/ReSPO/">
+        ReSPO
+       </a>
+       reshapes sequence-level importance weights to address gradient starvation in off-policy learning.
+      </div>
+     </li>
+     <li>
       <time class="news-date" datetime="2026-09-11">
        <span>
         Sep 11
@@ -324,6 +341,54 @@
     <div class="publication-list">
      <article class="publication">
       <figure class="paper-image">
+       <a aria-label="Enlarge method diagram: ReSPO gradient allocation" class="diagram-link" href="images/publications/respo-diagram-v3.png" rel="noopener" style="--heading-trim: 10%; --heading-background: #fffdf4;" target="_blank">
+        <span aria-hidden="true" class="diagram-heading">
+         <span>
+          ReSPO
+         </span>
+        </span>
+        <span class="diagram-art">
+         <img alt="ReSPO preserves low-ratio positive gradients, suppresses high-ratio positive gradients, and suppresses both negative-ratio extremes." height="1024" loading="lazy" src="images/publications/respo-diagram-v3.png" width="1536"/>
+        </span>
+       </a>
+      </figure>
+      <div class="paper-info">
+       <span class="paper-venue" data-venue="arxiv">
+        arXiv
+       </span>
+       <span class="paper-topic">
+        LLM POST-TRAINING · OFF-POLICY LEARNING
+       </span>
+       <a href="https://arxiv.org/abs/2609.35433">
+        <h3>
+         ReSPO: Reshaped Sequence Policy Optimization for Gradient Starvation in Off-Policy Learning
+        </h3>
+       </a>
+       <strong>
+        Yihang Chen
+       </strong>
+       , Yuanhao Ban, Cho-Jui Hsieh
+       <br/>
+       arXiv preprint: September 2026.
+       <br/>
+       <a href="https://arxiv.org/abs/2609.35433">
+        [arXiv]
+       </a>
+       /
+       <a href="https://yhangchen.github.io/ReSPO/">
+        [webpage]
+       </a>
+       /
+       <a href="https://github.com/yhangchen/ReSPO-code">
+        [code]
+       </a>
+       <p>
+        We reshape sequence-level importance weights with sign-dependent kernels that preserve gradients for under-generated correct responses while suppressing over-generated correct responses and extreme incorrect-response updates.
+       </p>
+      </div>
+     </article>
+     <article class="publication">
+      <figure class="paper-image">
        <a aria-label="Enlarge method diagram: ReCAST: Reward Credit Assignment across Timesteps for Online Diffusion Reinforcement" class="diagram-link" href="images/publications/recast-diagram.jpg" rel="noopener" style="--heading-trim: 8%; --heading-background: #fffdf4;" target="_blank">
         <span aria-hidden="true" class="diagram-heading">
          <span>
@@ -356,6 +421,14 @@
        <br/>
        <a href="https://arxiv.org/abs/2609.13425">
         [arXiv]
+       </a>
+       /
+       <a href="https://yhangchen.github.io/ReCAST/">
+        [webpage]
+       </a>
+       /
+       <a href="https://github.com/yhangchen/ReCAST-code">
+        [code]
        </a>
        <p>
         We assign each reward greater weight at the denoising timesteps where its feedback is most informative, while preserving user-specified reward budgets.

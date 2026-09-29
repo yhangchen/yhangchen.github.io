@@ -466,7 +466,7 @@ footer {
 
 /* Method diagrams need more room than decorative thumbnails. */
 .publication { grid-template-columns: 340px minmax(0, 1fr); }
-.paper-image { margin: 0; background: #fff; }
+.paper-image { margin: 0; background: #fffdf4; }
 .paper-image img { aspect-ratio: 3 / 2; }
 .paper-image a { display: block; cursor: zoom-in; }
 .paper-image figcaption {
@@ -489,7 +489,7 @@ footer {
 .diagram-heading {
   display: block;
   padding: 4px 10px;
-  background: var(--heading-background);
+  background: #fffdf4;
   color: #083c46;
   pointer-events: none;
   text-align: center;
@@ -504,9 +504,12 @@ footer {
 .diagram-art {
   display: block;
   overflow: hidden;
+  isolation: isolate;
+  background: #fffdf4;
 }
 .diagram-art img {
   margin-top: calc(-1 * var(--heading-trim));
+  mix-blend-mode: multiply;
 }
 
 /* News dates use a compact, aligned date badge. */
