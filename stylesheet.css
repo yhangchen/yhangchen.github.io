@@ -4,7 +4,7 @@
   --muted:#626d70;
   --accent:#236c64;
   --line:#dddfd7;
-  --serif:Georgia,'Times New Roman',serif
+  --serif:Palatino,'Palatino Linotype','Book Antiqua',Georgia,serif
 }
 
 * {
@@ -18,7 +18,7 @@ body {
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font:15px/1.75 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  font:15px/1.75 var(--serif);
   border-top:4px solid var(--accent)
 }
 a {
@@ -101,7 +101,7 @@ h1 {
   margin:0 0 12px
 }
 h1 span {
-  font:normal 24px/1.4 sans-serif;
+  font:normal 24px/1.4 var(--serif);
   letter-spacing:1px;
   color:var(--muted);
   display:inline-block;
@@ -499,7 +499,7 @@ footer {
   align-items: center;
   justify-content: center;
   min-height: 24px;
-  font: 700 14px/16px -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font: 700 14px/16px var(--serif);
 }
 .diagram-art {
   display: block;
